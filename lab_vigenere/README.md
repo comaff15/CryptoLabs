@@ -11,17 +11,10 @@
 - Простая модульная архитектура
 - Подробный режим вывода для отладки
 
-## Требования
-- Python 3.6 или выше
-
-## Установка
-1. Клонируйте или скачайте репозиторий
-2. Убедитесь, что установлен Python 3.6+
-
 ## Использование
 
 ### Синтаксис
-python main.py <входной_файл> [--encrypt|--decrypt] --key <ключ> [опции]
+`python main.py <входной_файл> [--encrypt|--decrypt] --key <ключ> [опции]`
 
 ### Основные опции
 - `--encrypt, -e` - режим шифрования
@@ -36,17 +29,36 @@ python main.py <входной_файл> [--encrypt|--decrypt] --key <ключ> 
    
 `python main.py document.txt --encrypt --key 12345`
 
-3. Шифрование с указанием выходного файла:
+2. Шифрование с указанием выходного файла:
    
 `python main.py image.jpg --encrypt --key "mysecret" -o encrypted_image.jpg`
 
-4. Расшифрование файла:
+3. Расшифрование файла:
    
 `python main.py document_encrypted.txt --decrypt --key 12345`
 
-6. Подробный режим:
+4. Подробный режим:
    
 `python main.py data.bin --encrypt --key 42 --verbose`
+
+### Примеры для демонстрационной программы (demo.py)
+1. Запуск всех демонстраций
+`python demo.py --all`
+
+2. Только базовая демонстрация
+`python demo.py --basic
+`
+3. Тестирование с бинарными файлами
+`python demo.py --binary
+`
+4. Тестирование производительности
+`python demo.py --performance
+`
+5. Тестирование обработки ошибок
+`python demo.py --errors`
+
+6. Интерактивная демонстрация
+`python demo.py --interactive`
 
 
 ## Принцип работы
@@ -59,6 +71,7 @@ python main.py <входной_файл> [--encrypt|--decrypt] --key <ключ> 
 - `vigenere.py` - реализация шифра Виженера
 - `file_handler.py` - работа с файлами
 - `utils.py` - вспомогательные функции
+- `demo.py` - вспомогательный скрипт для тестирования функционала
 
 ## Примечания
 - Ключ не должен быть пустым

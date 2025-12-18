@@ -1,6 +1,7 @@
 """
 Реализация шифра Виженера для двоичных данных
 Работа в кольце вычетов по модулю 256
+
 """
 
 class VigenereCipher:
@@ -34,7 +35,6 @@ class VigenereCipher:
         encrypted = bytearray(len(data))
         
         for i, byte in enumerate(data):
-            # Операция сложения по модулю 256
             key_byte = self.key[i % self.key_length]
             encrypted[i] = (byte + key_byte) % 256
         
