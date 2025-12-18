@@ -33,15 +33,19 @@ python main.py <входной_файл> [--encrypt|--decrypt] --key <ключ> 
 ### Примеры
 
 1. Шифрование файла с числовым ключом:
+   
 `python main.py document.txt --encrypt --key 12345`
 
-2. Шифрование с указанием выходного файла:
+3. Шифрование с указанием выходного файла:
+   
 `python main.py image.jpg --encrypt --key "mysecret" -o encrypted_image.jpg`
 
-3. Расшифрование файла:
+4. Расшифрование файла:
+   
 `python main.py document_encrypted.txt --decrypt --key 12345`
 
-4. Подробный режим:
+6. Подробный режим:
+   
 `python main.py data.bin --encrypt --key 42 --verbose`
 
 
